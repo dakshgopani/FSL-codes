@@ -1,0 +1,48 @@
+<html>
+<body>
+<form>
+Num1 : <input type="text" id="Text1">
+Num2 : <input type="text" id="Text2"><br><br>
+Addition : <input type="text" id="Text3"><br><br>
+Subtraction : <input type="text" id="Text4"><br><br>
+Multiplication : <input type="text" id="Text5"><br><br>
+Division : <input type="text" id="Text6"><br><br>
+<p>Click the following buttons to perform any operation</p>
+<button type="button" onclick="add();">Addition</button>
+<button type="button" onclick="sub();">Subtraction</button>
+<button type="button" onclick="mul();">Multiplication</button>
+<button type="button" onclick="div();">Division</button>
+<input type="reset" value="reset">
+</form>
+<script>
+function add()
+{
+	a = parseInt(document.getElementById("Text1").value);
+	b = parseInt(document.getElementById("Text2").value);
+	c = a + b;
+	document.getElementById("Text3").value=c;
+}
+function sub()
+{
+	a = parseInt(document.getElementById("Text1").value);
+	b = parseInt(document.getElementById("Text2").value);
+	c = a - b;
+	document.getElementById("Text4").value=c;
+}
+function mul()
+{
+	a = parseInt(document.getElementById("Text1").value);
+	b = parseInt(document.getElementById("Text2").value);
+	c = a * b;
+	document.getElementById("Text5").value=c;
+}
+function div()
+{
+	a = parseInt(document.getElementById("Text1").value);
+	b = parseInt(document.getElementById("Text2").value);
+	c = a / b;
+	document.getElementById("Text6").value=c;
+}
+</script>
+</body>
+</html>

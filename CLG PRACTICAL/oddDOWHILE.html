@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function ODD()
+{
+	let a = parseInt(document.getElementById("num1").value);
+	do {
+		if(a % 2 == 1) {
+			document.write("Odd Number : " + a + "<br>");
+			}
+			a++;
+		}
+	while(a<=100);
+}
+</script>
+<form>
+Enter a number : <input type="text" id="num1"><br>
+<input type="submit" value="submit" onclick="ODD();">
+</form>
+</body>
+</html>

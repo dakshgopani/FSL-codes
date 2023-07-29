@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<script>
+			function fact() {
+				var fact = 1;
+				var a =parseInt(document.getElementById("num1").value);
+				for(let i = 1;i <= a;i++) {
+					fact = fact * i;
+				} 
+				document.write("The factorial of " + a + " is : " + fact);
+			}
+		</script>
+			<form>
+				Enter a number : <input type="text" id="num1"><br>
+				<input type="button" value="submit" onclick="fact()">
+			</form>
+	</body>
+</html>

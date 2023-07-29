@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<form>
+			Enter a number : <input type="text" id="Text1"><br>
+			<p>Click the button to see whether a number is even or odd</p>
+			<input type="button" onclick="oddEven();" value="Click ME">
+		</form>
+			<script>
+				function oddEven() {
+					let a = parseInt(document.getElementById("Text1").value);
+					if(a % 2 == 0) {
+						alert("This is an even number");
+						document.write("This is an even number");	
+						}
+					else {
+						alert("This is an odd number");
+						document.write("This is an odd number");	
+						}
+					//document.getElementById("Text1").value=a;		
+					}
+			</script>
+	</body>
+</html>		

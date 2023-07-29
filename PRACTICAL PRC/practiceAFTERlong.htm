@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="demo1">Enter 1st name : </label>
+        <input type="text" name="" id="demo1">
+        <label for="demo2">Enter 2nd name : </label>
+        <input type="text" name="" id="demo2">
+        <label for="demo3">Enter 3rd name : </label>
+        <input type="text" name="" id="demo3">
+        <!-- <input type="text" id="ans"> -->
+        <br>
+        <input type="submit" value="submit" onclick="onclick()">
+    </form>
+    <script>
+        function onclick() {
+            let var1 = document.getElementById("demo1").value;
+            let var2 = document.getElementById("demo2").value;
+            let var3 = document.getElementById("demo3").value;
+            let new1 = var1 + var2 + var3;
+            document.write(new1);
+           // document.getElementById("ans").innerHTML=new1;
+        }
+    </script>
+</body>
+
+</html>
