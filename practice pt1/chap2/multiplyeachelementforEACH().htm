@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <p id="dem"></p>
+        <script>
+            const number = [454,65,45];
+            number.forEach(myFunction);
+            document.getElementById("dem").innerHTML=number;
+            function myFunction(item,index,arr) {
+                arr[index] = item*10;
+            }
+        </script>
+    </body>
+</html>

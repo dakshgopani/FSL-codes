@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        MyBanners = new Array('1.jpg', '2.jpg', '3.jpg');
+        MyBannerLinks = new Array('https://www.a.com', 'https://www.b.com', 'https://www.c.com');
+        banner = 0;
+        function showLinks() {
+            document.location.href = "https://www." + MyBannerLinks[banner];
+        }
+        function showBanners() {
+            if (document.images) {
+                banner++;
+            }
+            if (banner = MyBanners.length) {
+                banner = 0;
+            }
+            document.DisplayBanner.src=MyBanners[banner];
+            setTimeout("showBanners()",5000);
+        }
+    </script>
+</head>
+
+<body onload="showBanners()">
+    <center>
+        <img src="1a.jpg" alt="" value="DisplayBanner" height="500" width="900">
+    </center>
+
+</body>
+
+</html>

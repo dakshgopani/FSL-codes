@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    Enter a text : <input type="text" id="mytext">
+    <input type="button" value="click" onclick="myFunction()">
+    <p id="demo"></p>
+    <script>
+        let arr = [];
+        function myFunction() {
+            var text = document.getElementById("mytext").value;
+            arr.push(text);
+            var prev = " ";
+            for (let i = 0; i < arr.length; i++) {
+                prev = prev + arr[i] + "<br>";
+                document.getElementById("demo").innerHTML = prev;
+            }
+        }
+    </script>
+</body>
+
+</html>

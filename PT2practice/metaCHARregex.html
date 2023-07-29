@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Regular Expressions (Meta characters)</h2>
+        <p>A global search for word characters:</p>
+        <p id="demo"></p>
+        <p>A global search for non-word characters:</p>
+        <p id="demo1"></p>
+        <p>A global search for digits:</p>
+        <p id="demo2"></p>
+        <p>A global search for non-digits:</p>
+        <p id="demo3"></p>
+        <p>Find the position where a NUL character is found:</p>
+        <p id="demo4"></p>
+        <p>find the position where a newline character is found:.</p>
+        <p id="demo5"></p>
+        <script>
+        let text = "Give 100%!";
+        let text1 = "Give 100%!";
+        let text2= "Give 100%!";
+        let text3 = "Give 100%!"; 
+        let text4 = "Visit W3Schools.\0Learn JavaScript."; 
+        let text5 = "Visit W3Schools.\nLearn JavaScript."; 
+        let pattern1 = /\w/g;
+        let pattern2 = /\W/g;
+        let pattern3 = /\d/g;
+        let pattern4 = /\D/g;
+        let pattern5= /\0/;
+        let pattern6= /\n/;
+        let result = text.match(pattern1);
+        let result1 = text1.match(pattern2);
+        let result2 = text2.match(pattern3);
+        let result3 = text3.match(pattern4);
+        let result4 = text4.search(pattern5);
+        let result5 = text5.search(pattern6);
+        document.getElementById("demo").innerHTML = result;
+        document.getElementById("demo1").innerHTML = result1;
+        document.getElementById("demo2").innerHTML = result2;
+        document.getElementById("demo3").innerHTML = result3;
+        document.getElementById("demo4").innerHTML = result4;
+        document.getElementById("demo5").innerHTML = result5;
+</script>
+</body>
+</html>

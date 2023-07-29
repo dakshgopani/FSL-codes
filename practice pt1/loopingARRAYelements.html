@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const fruits = ["BANANA","ORANGE","orange","banana"];
+            var newlen = fruits.length;
+            let text = "<ul>";
+                for(let i=0;i<newlen;i++) {
+                    text+="<li>" + fruits[i] + "</li>";
+                }
+                text+="</ul>";
+                document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>

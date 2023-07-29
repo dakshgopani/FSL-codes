@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    Enter a number whose cube you want to find out : <input type="text" name="" id="num">
+    <br>
+    <input type="button" value="ClickMe" onclick="getCube()">
+    <script>
+        function getCube() {
+            let cube = document.getElementById("num").value;
+            let new1 = cube*cube*cube;
+            document.write(new1); 
+        }
+        // let n = prompt("Enter a number whose cube you want to find out ");
+        // alert("Cube of " + n +" is " + n*n*n);
+    </script>
+</body>
+
+</html>

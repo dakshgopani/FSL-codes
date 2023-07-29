@@ -1,0 +1,45 @@
+<html>
+
+<body>
+    <h2>JavaScript Regular Expressions (Quantifiers)</h2>
+    <p>A global search for at least one "o" in a string : </p>
+    <p id="demo"></p>
+    <p>A global search for "1" followed by zero or more "o" characters :</p>
+    <p id="demo1"></p>
+    <p>A global search for "1" followed by zero or one "o" characters : </p>
+    <p id="demo2"></p>
+    <p>A global search for sequence of four digits : </p>
+    <p id="demo3"></p>
+    <p>A global search for a sequence of three to four digits :</p>
+    <p id="demo4"></p>
+    <p>A global search for a sequence of at least three digits : </p>
+    <p id="demo5"></p>
+    <script>
+        let text1 = "Helloooo Worooldddddddd";
+        let pattern1 = /o+/g;
+        let pattern2 = /10*/g;
+        let text2 = "1,100 or 10000000 ?";
+        let pattern = /10?/g;
+        let text = "1,100,10000 or 100000";
+        let pattern3 = /\d{4}/g;
+        let text3 = "100,10000 or 10000";     
+        let pattern4 = /\d{3,4}/g;
+        let text4 = "1000,100,1000000 or 10000000000000";
+        let pattern5 = /\d{3,}/g;
+        let result = text1.match(pattern1);
+        let result1 = text2.match(pattern2);
+        let result2 = text2.match(pattern);
+        let result3 = text.match(pattern3);
+        let result4 = text3.match(pattern4);
+        let result5 = text4.match(pattern5);
+        document.getElementById("demo").innerHTML = result;
+        document.getElementById("demo1").innerHTML = result1;
+        document.getElementById("demo2").innerHTML = result2;
+        document.getElementById("demo3").innerHTML = result3;
+        document.getElementById("demo4").innerHTML = result4;
+        document.getElementById("demo5").innerHTML = result5;
+       // document.getElementById("demo").innerHTML=result;x
+    </script>
+</body>
+
+</html>

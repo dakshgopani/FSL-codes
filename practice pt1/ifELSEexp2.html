@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function oddEven() {
+                let num = parseInt(document.getElementById("num1").value);
+                if(num%2==0) {
+                    document.write(num + " is an Even number");
+                }
+                else {
+                    document.write(num + " is an Odd number");
+                }
+            }
+        </script>
+        <form action="">
+            Enter a number : <input type="text" id="num1"><br><br>
+            <input type="button" value="Submit" onclick="oddEven()">
+        </form>
+    </body>
+</html>

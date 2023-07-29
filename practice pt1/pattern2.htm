@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <label for="row">Enter number of rows : </label>
+    <input type="text" name="" id="row">
+    <br>
+    <input type="button" value="click" onclick="myFunction()">
+<script>
+    function myFunction() {
+    var n = document.getElementById("row").value;
+    let string = "";
+    for(let i=0;i<n;i++) {
+        for(let j=0;j<=i;j++) {
+            string+="*";
+        }
+        string+="<br>";
+    }
+    document.write(string);
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            function swap() {
+                var x,y;
+                x = Number(document.getElementById("first").value);
+                y = Number(document.getElementById("second").value);
+                x = x + y;
+                y = x - y;
+                x = x - y;
+                document.getElementById("answer1").value=x;
+                document.getElementById("answer2").value=y;
+            }
+        </script>
+        Value of x : <input type="text" id="first">
+        Value of y : <input type="text" name="" id="second"><br><br>
+        <button onclick="swap()">SWAP</button>
+        <br><br><br>
+        Value of x : <input type="text" id="answer1">
+        Value of y : <input type="text" name="" id="answer2">
+    </body>
+</html>

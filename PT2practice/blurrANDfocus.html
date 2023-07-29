@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            var myWindow;
+            function openWin()
+            {
+                myWindow = window.open("","","height=100,width=100");
+            }
+            function blurWin()
+            {
+                myWindow.blur();
+            }
+            function focusWin()
+            {
+                myWindow.focus();
+            }
+        </script>
+        <form action="">
+            <input type="button" value="Open new window" onclick="openWin()">
+            <input type="button" value="Blur new window" onclick="blurWin()">
+            <input type="button" value="Focus new window" onclick="focusWin()">
+        </form>
+    </body>
+</html>

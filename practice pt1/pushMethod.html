@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <p>JavaScript push() method</p>
+    <button onclick="myFunction()">TRY</button>
+    <p id="demo"></p>
+    <script>
+        const fruits = ["banana","apple","watermelon"];
+        document.getElementById("demo").innerHTML = fruits;
+        function myFunction()
+        {
+            fruits.push("lemon");
+            document.getElementById("demo").innerHTML = fruits; 
+        } 
+    </script>
+</body>
+
+</html>

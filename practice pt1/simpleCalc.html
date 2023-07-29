@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+            function add()
+            {
+                a = parseInt(document.getElementById("text1").value);
+                b = parseInt(document.getElementById("text2").value);
+                c = a + b;
+                document.getElementById("text3").value=c;
+            }
+            function sub()
+            {
+                a = parseInt(document.getElementById("text1").value);
+                b = parseInt(document.getElementById("text2").value);
+                c = a - b;
+                document.getElementById("text4").value=c;
+            }
+            function div() {
+                a = parseInt(document.getElementById("text1").value);
+                b = parseInt(document.getElementById("text2").value);
+                c = a / b;
+                document.getElementById("text5").value=c;
+            }
+            function mul() {
+                a = parseInt(document.getElementById("text1").value);
+                b = parseInt(document.getElementById("text2").value);
+                c = a * b;
+                document.getElementById("text6").value=c;
+            }
+        </script>
+        <form action="">
+            Num1 : <input type="text" id="text1"><br><br>
+            Num2 : <input type="text" id="text2"><br><br>
+            Addition : <input type="text" name="" id="text3"><br><br>
+            Subtraction : <input type="text" name="" id="text4"><br><br>
+            Division : <input type="text" name="" id="text5"><br><br>
+            Multiplication : <input type="text" name="" id="text6"><br><br>
+            <input type="button" value="Addition" onclick="add()">
+            <input type="button" value="Subtraction" onclick="sub()">
+            <input type="button" value="Division" onclick="div()">
+            <input type="button" value="Multiplication" onclick="mul()">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            MyBanners=new Array('1a.jpg','2b.jpg','3c.jpg');
+            banner=0;
+            function showBanners()
+            {
+                if(document.images)
+                {
+                    banner++;
+                }
+                if(banner==MyBanners.length)
+                {
+                    banner=0;
+                }
+                document.C1.src=MyBanners[banner];
+                setTimeout("showBanners()",5000);
+            }
+        </script>
+    </head>
+    <body onload="showBanners()">
+        <center>
+            <img src="1a.jpg" alt="" value="hello" name="C1" height="100" width="100">
+        </center>
+    </body>
+</html>
