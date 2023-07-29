@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic changing menu</title>
+</head>
+<script>
+    function populate(s1,s2)
+    {
+        var sel1 = document.getElementById(s1);
+        var sel2 = document.getElementById(s2);
+        sel2.innerHTML="";
+
+        if(sel1.value == "Chevy")
+        {
+            var optionArray = ["|","camaro|Camaro","corvette|Corvette","impala|Impala"];
+        }
+        else if(sel1.value == "Dodge")
+        {
+            var optionArray = ["|","avenger|Avenger","challenger|Challenger","charger|Charger"];
+        }
+        else if(sel1.value == "Ford")
+        {
+            var optionArray = ["|","mustang|Mustang","shelby|Shelby"];
+        }
+        for(var option in optionArray)
+        {
+            var pair = optionArray[option].split("|");
+            var newOption = document.createElement("option");
+            newOption.value = pair[0];
+            newOption.innerHTML = pair[1];
+            sel2.options.add(newOption);
+        }
+    }
+
+</script>
+<body>
+    <h2>Choose your car</h2>
+    <hr>
+    choose car make:
+    <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+        <option value=""></option>
+        <option value="Chevy">Chevy</option>
+        <option value="Dodge">Dodge</option>
+        <option value="Ford">Ford</option>
+    </select>
+    <hr>
+    Choose car model:
+    <select id="slct2" name="slct2"></select>
+    <hr>
+</body>
+</html>
